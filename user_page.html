@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Página de Utilizador</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="style.css" rel="stylesheet">
+		<link href="style_user_page.css" rel="stylesheet">
+		<link href="layout.css" rel="stylesheet">
+		<link href="responsive.css" rel="stylesheet">
+		<link href="comments.css" rel="stylesheet">
+		<link href="forms.css" rel="stylesheet">
+		<script src="jquery.collapsible_user_page.js"></script>
+
+    </head>
+    <body>
+		<div class="topnav">
+			<img class="logo_img" src="logo_placeholder.jpg" alt="Logo"> 
+			<a class="active" href="#home">Sobre</a>
+			<a href="#about">Receitas</a>
+			<a href="#contact">FAQs</a>
+			<div style="position: absolute; right: 0px; vertical-align: middle;">
+				<input type="text" placeholder="Pesquisa de receitas..">
+				<img class="icon_nav" src="icons/avatar.png"/ >
+				<img class="icon_nav" src="icons/heart.png"/ >
+				<img class="icon_nav" src="icons/checkout.jpg"/ >
+			</div>	
+		</div>
+		
+		<div>
+			<h1> Dados Pessoais </h1>
+			<table>
+			<tr>
+				<th>Nome:</th>
+				<td colspan="3"><input type="text" value="Sónia Alexandra Cardoso Marques" size="40"></td> 
+				
+			</tr>
+			<tr>
+				<th>Data de nascimento:</th>
+				<td><input type="date" value="2013-09-02"></td> 
+				<th>E-mail:</th>
+				<td><input type="email" value="placeholder@gmail.com" ></td> 
+			</tr>
+			<tr>
+				<th>Alergéneos:</th>
+				<td>
+					<input type="checkbox" name="gluten" value="gluten"> Glúten<br>
+					<input type="checkbox" name="lactose" value="lactose"> Lactose<br>
+					<input type="checkbox" name="frutos_secos" value="frutos_secos" checked> Frutos secos<br>
+				</td> 
+				<th>Regime alimentar:</th>
+				<td>
+					<input type="checkbox" name="vegan" value="vegan"> Vegan<br>
+					<input type="checkbox" name="vegetariano" value="vegetariano"> Vegetariano<br>
+					<input type="checkbox" name="paleo" value="paleo" checked> Paleo<br>
+					<input type="checkbox" name="other" value="other" checked> Outro<br>
+					<input type="text" value="especificar">
+				</td> 
+			</tr>
+			</table>
+			<input type="submit" value="Guardar alterações">
+		</div>
+		<div>
+			<h1> Alterar Password</h1>
+						<table>
+			<tr>
+				<th>Password Atual:</th>
+				<td><input type="password" value="inserir"></td> 
+			</tr>
+			<tr>
+				<th>Nova Password:</th>
+				<td><input type="password" value="inserir"></td> 
+			</tr>
+			</table>
+			<input type="submit" value="Guardar">
+		</div>
+		<div>
+			<h1>Favoritos</h1>
+			<div class="row_receitas">
+			    <div class="receita">
+					<div class="receita_section_img"><img src="demo/attic.jpg" alt="social media" /></div>
+					<div class="receita_section_info">
+						<h2>Nome da receita</h2>
+						<p> Descrição Cool Fancy Text Generator is a copy and paste font generator and font changer that creates Twitter, 
+						Facebook, Instagram fonts. It converts a normal text to different free </p>
+						<div style="position: absolute; bottom: 0px; right: 0px">
+							<img id="icon" src="icons/heart.png"/>
+							<button type="button" style="margin: 0px 15px 15px 5px; float: left">Ver mais</button>
+						</div>	
+					</div>
+				</div>
+				<div class="receita">
+					<div class="receita_section_img"><img src="demo/attic.jpg" alt="social media" /></div>
+					<div class="receita_section_info">
+						<h2>Nome da receita</h2>
+						<p> Descrição Cool Fancy Text Generator is a copy and paste font generator and font changer that creates Twitter, 
+						Facebook, Instagram fonts. It converts a normal text to different free </p>
+						<div style="position: absolute; bottom: 0px; right: 0px">
+							<img id="icon" src="icons/heart.png"/>
+							<button type="button" style="margin: 0px 15px 15px 5px; float: left">Ver mais</button>
+						</div>	
+					</div>
+				</div>
+			</div>
+			<div class="row_receitas">
+			    <div class="receita">
+					<div class="receita_section_img"><img src="demo/attic.jpg" alt="social media" /></div>
+					<div class="receita_section_info">
+						<h2>Nome da receita</h2>
+						<p> Descrição Cool Fancy Text Generator is a copy and paste font generator and font changer that creates Twitter, 
+						Facebook, Instagram fonts. It converts a normal text to different free </p>
+						<div style="position: absolute; bottom: 0px; right: 0px">
+							<img id="icon" src="icons/heart.png"/>
+							<button type="button" style="margin: 0px 15px 15px 5px; float: left">Ver mais</button>
+						</div>	
+					</div>
+				</div>
+				<div class="receita">
+					<div class="receita_section_img"><img src="demo/attic.jpg" alt="social media" /></div>
+					<div class="receita_section_info">
+						<h2>Nome da receita</h2>
+						<p> Descrição Cool Fancy Text Generator is a copy and paste font generator and font changer that creates Twitter, 
+						Facebook, Instagram fonts. It converts a normal text to different free </p>
+						<div style="position: absolute; bottom: 0px; right: 0px">
+							<img id="icon" src="icons/heart.png"/>
+							<button type="button" style="margin: 0px 15px 15px 5px; float: left">Ver mais</button>
+						</div>	
+					</div>
+				</div>
+			</div>
+			<button type="button">Ver todos</button>
+		</div>
+		
+		<div>
+			<h1>Pontos acumulados</h1>
+			<tr>
+				<td>O seu número de pontos é:</td>
+				<td>xxx</td>					
+			</tr>
+		</div>
+		
+		
+		<div class="row">
+		  <div class="column3" style="height:20px;"></div>
+		  <div class="column3" style="text-align: center;">
+			<p>Subscreve a nossa newsletter!</p>
+			<input type="email" placeholder="inserir e-mail...">
+			<input type="submit" value="Subscrever" >
+		  </div>
+		  <div class="column3" style="text-align: right; bottom: 0;">
+			<img src="demo/attic.jpg" alt="social media" style="width:48px;height:48px;" style="position: absolute; bottom: 0px;"/>
+		  </div>
+		</div>
+
+	</body>
+</html>
+
+
