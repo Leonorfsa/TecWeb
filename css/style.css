@@ -189,18 +189,30 @@ pre {
 
 /* end of Navigation Bar */ 
 
-/* ESTAVA A TENTAR FAZER COM QUE ISTO NÃO FICASSE LOUCO QD SE REDUZ A PÁGINA
- @media screen and (max-width: 700px) {
 
-	.leftside {
+ @media(max-width: 650px) {
+ /* MELHORAR ISTO */ 
+
+ 	#recipe #geral{
+		float:none;
+		width: 100%;
+	}
+
+	#recipe #ingredients {
+		float:none;
+		width: 100%;
 		padding: 0px;
 		margin: 0px 0px 0px 0px;
-		width: 10%;
-		background-color: #2196F3;
+	}
+	#recipe #addtocart {
+		float:none;
+		width: 30%;
+		margin:auto;
+		margin-bottom: 10px;
+		display:block;
 	}
  
 } 
-*/
 
 .descricao{
 	margin-left: 20%;
@@ -254,7 +266,7 @@ pre {
 	padding: 20px;
 	border: 2px rgb(177, 177, 177) solid;
 	float: left;
-	width: 40%;
+	min-width: 40%;
 	box-sizing: border-box;
 	margin: 0px 10px 0px 20px;
 }
