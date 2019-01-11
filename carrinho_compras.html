@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Carrinho de compras</title>    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css\style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="topnav">
+			<a class="logo_img" href="index.html"> <img class="logo_img" src="images\logo.png" alt="Logo"> </a>
+			<a class="button" href="sobre.html">Sobre</a>
+			<a class="button" href="lista_receitas.html">Receitas</a>
+			<a class="button" href="#FAQs">FAQs</a>
+			<div style="position: absolute; right: 0px; top: 8px; vertical-align: middle;">
+				<input type="text" placeholder="Pesquisa de receitas..">
+				<a href="user_page.html"><img class="icon_nav" src="icons/avatar.png" ></a>
+				<a href=*><!--Adicionar aos favs--><img class="icon_nav" src="icons/heart.png" ></a>
+				<a href="carrinho_compras.html"><img class="icon_nav" src="icons/checkout.jpg" ></a>
+			</div>	
+		</div>
+	
+        <div>
+            <h1>Carrinho de Compras</h1>
+            <fieldset>
+                <center>
+                    <form>
+                        <label>
+                            Data de entrega <input type="date" name="data">
+                        </label>
+                        <img style="vertical-align:middle" class="calendar" src="calendar.png" width="20" alt="cal"> 
+                        <label>
+                            Hora de entrega <input type="time" name="hora">
+                        </label>
+                        <img style="vertical-align:middle" class="clock" src="clock.png" width="20" alt="clo"> 
+                    </form>
+                </center>
+                <fieldset>
+                    <form action="">
+                        <div class="row">
+                            <div class="column2">
+                                <img style="vertical-align:left" hspace="20" class="recipe" src="recipe.jpg" width="200" alt="rec">
+                            </div>
+                            <div class="column3">
+                                <strong> Bowl de tofu</strong>
+                                <br>
+                                <br>
+                                Preço: 
+                                <label>
+                                    Número de doses <input type="number" value="10" min="0" max="100" step="5">
+                                </label>
+                                <br>
+                                <br>
+                                <input type="radio" name="cooking" value="ingredientes" checked="checked">Ingredientes
+                                <input type="radio" name="cooking" value="prato">Prato já confecionado 
+                                <br>
+                                <br>
+                                <br>
+                                <button formaction="eliminate.php" formmethod="post" style="float: right">Eliminar do carrinho</button>
+                            </div>
+                        </div>                  
+                    </form>
+                </fieldset>
+                <center>
+                    <input type="submit" value="Finalizar compra"> <!--verificar se funciona por estar depois do final do form-->
+                </center>
+            </fieldset>
+        </div>
+    </body>
+    <footer>
+            <div align="center">
+                <p>Subscreve a nossa newsletter!</p>
+                <input type="email" placeholder="inserir e-mail...">
+                <input type="submit" value="Subscrever" >
+            </div>
+    </footer>
+</html>

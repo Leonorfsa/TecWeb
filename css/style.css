@@ -1,0 +1,399 @@
+body {
+	font-family:			"Segoe UI", Verdana, Helvetica, Arial, sans-serif;
+	font-size:				13px;
+	margin: 0;
+	padding: 0;
+}
+
+a{ /* para se tirar a cor e sublinhado feios dos links */ 
+	text-decoration: none;
+	color:#000;
+}
+
+a:hover{
+	color: rgb(51, 79, 88);
+}
+
+#menu {
+	margin-bottom:			2em;
+}
+
+#preview {
+	padding:				2em;
+	text-align:				center;
+}
+
+.chapter {
+	-webkit-columns:		460px;
+	   -moz-columns:		460px;
+			columns:		460px;
+
+	-webkit-column-gap:		4em;
+	   -moz-column-gap:		4em;
+			column-gap:		4em;
+
+	-webkit-column-rule:	thin solid silver;
+	   -moz-column-rule:	thin solid silver;
+			column-rule:	thin solid silver;
+
+	text-align:				justify;
+}
+
+h1{
+	background:			gray;
+	text-align: center;
+	color:					white;
+	margin-top:				0;
+	font-size: 30px;
+}
+h2 {
+	background:				gray;
+	color:					white;
+	padding:				.2em .4em;
+}
+
+h3 {
+	color:					rgb(82, 82, 82);
+	margin-top:				0;
+	text-align: center;
+	Letter-spacing: 0.2em;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+	text-transform: uppercase;
+	font-weight:100;
+}
+
+hr {
+	border-top:			double;
+	margin:				2em 25%;
+	
+}
+
+#footer {
+	margin-top:			4em;
+	text-align:			center;
+	color:				silver;
+	border-top:			thin solid silver;
+	padding-top:		1em;
+}
+
+.clear{
+	clear:both;
+}
+
+.output {
+	font-family:		monospace;
+	border:				solid thin silver;
+	padding:			.2em .4em;
+	background-color:	#cf3;
+}
+
+.clickable {
+	cursor:				pointer;
+}
+
+pre {
+	tab-size:			4;
+	overflow-x:			auto;
+	background-color:	#eee;
+	-webkit-column-break-inside: avoid;
+}
+
+
+#preview-coverflow .cover {
+	cursor:		pointer;
+	width:		320px;
+	height:		240px;
+	box-shadow:	0 0 4em 1em white;
+}
+
+/* END STYLE - COVERFLOW */
+
+
+/* NAVIGATION BAR */ 
+/* Add a background color to the top navigation bar */
+.topnav {
+  overflow: hidden;
+  position: relative;
+  background-color: #80B513;
+  height: 60px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a.button {
+  height: 40px;
+  float: left; 
+  display: block;
+  font-family: "Montserrat";
+  color: white;
+  text-align: center;
+  padding: 20px 18px 10px 18px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color:#49690A;;
+  color: white;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+  color: #49690A;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+    float: left;
+    padding: 6px;
+    border: none;
+    margin-right: 16px;
+    font-size: 17px;
+    border-radius: 15px;
+    margin-top:6px;
+}
+  
+.logo_img{
+	float: left;
+    width: 60px;
+	height: auto;
+}
+
+.icon_nav {
+	float: left;
+    height: 20px;
+    width: auto;
+	padding-right: 20px;
+	vertical-align: middle;
+	padding-top:5%;
+}
+
+.round_search_box{
+    border-radius: 15px;
+    border: 1px #000 solid;
+}
+
+/* end of Navigation Bar */ 
+
+/* ==================== css para o index  ==================== */
+
+.receita {
+	float: left;
+	width: 48.7%;
+	height: auto;
+	border: 1px solid black;
+	margin: 0.5%;
+	position: relative;
+}
+
+.receita:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.receita_section_img {
+	float: left;
+	width: 50%;
+}
+
+.receita_section_info {
+	float: left;
+	width: 48%;
+	padding-left: 1%;
+	
+}
+
+.receita_section_info > p{
+	padding-bottom: 40px;
+}
+
+.receita_section_img > img{
+	width:100%;
+}
+
+#icon{
+	width: 22px;	
+	float: left;
+	margin-right: 5px;
+}
+
+.row_receitas:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*  ==================== css para o lista_receitas  ==================== */
+
+.receita_lista {
+	content: "";
+	display: table;
+	clear: both;
+	width: 80%;
+	height: auto;
+	border: 1px solid black;
+	margin-right: 15%;
+	margin-left: 5%;
+	margin-bottom: 1%;
+	position: relative;
+}
+
+
+
+/*  ==================== CSS PARA DESCRICAO DA RECEITA   ==================== */
+
+ @media(max-width: 650px) {
+ /* MELHORAR ISTO */ 
+
+ 	#recipe #geral{
+		float:none;
+		width: 100%;
+	}
+
+	#recipe #ingredients {
+		float:none;
+		width: 100%;
+		padding: 0px;
+		margin: 0px 0px 0px 0px;
+	}
+	#recipe #addtocart {
+		float:none;
+		width: 30%;
+		margin:auto;
+		margin-bottom: 10px;
+		display:block;
+	}
+ 
+} 
+
+.descricao{
+	margin-left: 20%;
+	margin-right: 20%;
+
+}
+
+#addtocart{
+	position: relative;
+	margin: 30px 20px 30px;
+	margin-left: 12%;
+	height: 40px;
+	width: 20%;
+	float: left;
+	box-sizing: border-box;
+}
+
+#recipe img{
+	float: center;
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+#recipe {
+	width: 95%;
+	margin: auto;
+}
+
+#recipe h1{
+	Letter-spacing: 0.1em;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+	font-weight:400;
+	margin-bottom: 0;
+}
+
+#geral{
+	float:right;
+	width: 50%;
+	margin: 30px 20px 0px 10px;
+	box-sizing: border-box;
+}
+
+#instructions {
+	padding: 40px;
+	border: 2px rgb(177, 177, 177) solid;
+	
+}
+
+#ingredients {
+	padding: 20px;
+	border: 2px rgb(177, 177, 177) solid;
+	float: left;
+	min-width: 40%;
+	box-sizing: border-box;
+	margin: 0px 10px 0px 20px;
+}
+
+#ingredients ul{
+	margin: 0;
+  padding: 20px;
+	text-align: center;
+	list-style-position: inside;
+	list-style: none;
+}
+
+#ingredients li{
+	padding-bottom: 5px;
+	border-bottom: dotted 2px gray;
+}
+
+#info{
+	padding-bottom: 10px;
+	font-size: 12px;
+	margin-bottom: 15px;
+}
+
+#info table{
+	border: 2px rgb(177, 177, 177) solid;
+	padding: 10px;
+}
+
+/*  ==================== CSS para definir 2 colunas   ==================== */
+  
+.column {
+    float: left;
+    width: 50%;
+  }
+
+.column2 {
+    float: left;
+    width: 30%
+}
+.column3 {
+    font-size: 15px;
+    float: left;
+    width: 50%;
+  }
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+    .topnav a, .topnav input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+  
+    .topnav input[type=text] {
+        border: 1px solid #ccc;
+          border-radius: 15px;
+          padding: 25px 50px;
+    }
+  
+    .receita {
+      display: block;
+      width: 90%;
+      }
+  }
+
