@@ -1,3 +1,8 @@
+Istructions:
+
+This website has the purpose of searching recipes and buying the ingredients of the recipes so the user can make those recipes at home.
+Without the login, the website works for watching and searching recipes. After the registration and after the user logs in the website, it is possible to make a recipe a favorite and add it to a favorite page, to add recipes to a shopping cart and change the number of doses and it is also possible to change the user data.
+
 This folder contains .html, .php, .css and .sql files.
 
 It contains the following pages:
